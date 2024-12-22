@@ -45,7 +45,7 @@ constexpr decltype(auto) ensure_buffer_source(B&& b) noexcept {
 }
 
 template <typename T>
-constexpr bool noexcept_buffer_input_v;
+constexpr bool noexcept_buffer_input_v = true;
 
 template <buffer_input T>
 constexpr bool noexcept_buffer_input_v<T> = noexcept(

@@ -36,7 +36,7 @@ constexpr decltype(auto) ensure_buffer_sink(Out&& out) noexcept {
 }
 
 template <typename T>
-constexpr bool noexcept_buffer_output_v;
+constexpr bool noexcept_buffer_output_v = true;
 
 template <buffer_output T>
 constexpr bool noexcept_buffer_output_v<T> =                          //
